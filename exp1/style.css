@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #000 100%);
+  background-size: 200% 200%;
+  animation: bgMove 20s ease infinite;
+  position: relative;
+  cursor: none;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.cursor {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  background: #00ffff;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: #00ffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #00ffff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #00cccc;
+}
+
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  color: #00ffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  transition: transform 0.3s;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #00ffff50;
+}
+
+.project h3 {
+  margin-bottom: 0.5rem;
+  color: #ffdd00;
+}
+
+.project ul {
+  margin: 0.5rem 0 0.5rem 1.5rem;
+}
+
+.project a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #00ffff20;
+  transition: transform 0.2s;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ccc;
+}
