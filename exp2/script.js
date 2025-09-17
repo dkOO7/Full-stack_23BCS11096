@@ -28,3 +28,10 @@ if (!localStorage.getItem('theme')) {
     toggleBtn.textContent = "☀️ Light Mode";
   }
 }
+// Toggle Dark Mode Functionality
+const themeToggleButton = document.querySelector('.theme-toggle');
+themeToggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+
+// You can add additional event listeners and functions as needed

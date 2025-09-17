@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Dashboard - Experiment 2</title>
+  <title>Admin Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <h2>Dashboard</h2>
-    <nav>
-      <a href="#">Overview</a>
-      <a href="#">Reports</a>
-      <a href="#">Analytics</a>
-      <a href="#">Settings</a>
-    </nav>
-  </aside>
 
-  <!-- Header -->
-  <header>
-    <h1>Admin Dashboard</h1>
-    <button class="theme-toggle">🌙 Dark Mode</button>
-  </header>
+  <!-- Navbar Component -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <h2>Admin Panel</h2>
+    </div>
+    <div class="navbar-right">
+      <button class="theme-toggle">🌙 Dark Mode</button>
+    </div>
+  </nav>
 
-  <!-- Main Content -->
-  <main>
-    <section class="card">📊 Chart Placeholder</section>
-    <section class="card">📈 Analytics Placeholder</section>
-    <section class="card">📂 Reports Placeholder</section>
-    <section class="card">⚙️ Settings Placeholder</section>
-  </main>
+  <div class="container">
+    <!-- Sidebar Component -->
+    <aside class="sidebar">
+      <nav>
+        <a href="#">Overview</a>
+        <a href="#">Reports</a>
+        <a href="#">Analytics</a>
+        <a href="#">Settings</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <section class="card">📊 Chart</section>
+      <section class="card">📈 Analytics</section>
+      <section class="card">📂 Reports</section>
+      <section class="card">⚙️ Settings</section>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
-
 </html>

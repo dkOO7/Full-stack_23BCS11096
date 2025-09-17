@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dynamic Product Filter</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+  <!-- Main Container -->
   <div class="container">
-    <header>
-      <h1>🛒 Product Store</h1>
-      <select id="categoryFilter">
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+      <h1 class="logo">🛒 Product Store</h1>
+      <select id="categoryFilter" class="filter-dropdown">
         <option value="all">All Categories</option>
         <option value="electronics">Electronics</option>
         <option value="clothing">Clothing</option>
@@ -21,10 +23,14 @@
       </select>
     </header>
 
-    <section id="productList" class="products"></section>
+    <!-- Product Grid -->
+    <main id="productList" class="product-grid">
+      <!-- Products will be inserted here dynamically -->
+    </main>
+
   </div>
 
   <script src="script.js"></script>
 </body>
-
 </html>
+cd 
